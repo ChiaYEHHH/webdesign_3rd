@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB012</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .container{
+            width: 1024px;
+            height: 768px;
+            background-color: bisque;
+        }
+        .header{
+            width: 1000px;
+            height: 65px;
+            background-color: aquamarine;
+        }
+        .content{
+            width: 1000px;
+            height: calc(768px - 65px - 20px );
+            background-color: cadetblue;
+        }
+        .aside{
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header"></header>
+        <div class="content">
+            <aside class="aside">
+                <div class="aside_menu"></div>
+                <div class="aside_update"></div>
+            </aside>
+            <main class="main">
+                <div class="main_marquee"></div>
+                <div class="main_content"></div>
+            </main>
+
+        </div>
+        <footer class="footer"></footer>
+    </div>
+
+</body>
+</html>
