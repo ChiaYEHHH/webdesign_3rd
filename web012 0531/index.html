@@ -4,20 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB012</title>
+    <title>WEB012-index</title>
     <style>
         * {
             box-sizing: border-box;
             overflow: hidden;
+
         }
 
         .container {
             width: 1024px;
             height: 768px;
-            background-color: bisque;
+            /* background-color: bisque; */
             /* display: flex; */
             margin: auto;
             justify-content: center;
+            /* border: 1px solid black; */
         }
 
         .header {
@@ -25,32 +27,37 @@
             height: 65px;
             /* background-color: aquamarine; */
             margin: auto;
+            border: 1px solid black;
+            border-bottom: 0px;
         }
 
         .header>a>img {
             width: 994px;
             height: 60px;
+            margin: auto;
         }
 
         .content {
             width: 1000px;
             height: calc(768px - 65px - 20px);
-            background-color: cadetblue;
+            /* background-color: cadetblue; */
             display: flex;
             margin: auto;
-            justify-content: center;
+            justify-content: space-between;
+            border: 1px solid black;
         }
 
         .aside {
             width: 215px;
             height: calc(768px - 65px - 20px);
-            background-color: bisque;
+            /* background-color: bisque; */
+            /* border: 1px solid black; */
         }
 
         .aside_menu {
             width: 215px;
             height: calc(768px - 65px - 20px - 25px);
-            background-color: rgb(135, 222, 193);
+            /* background-color: rgb(135, 222, 193); */
             font-family: '標楷體';
             /* font-size: x-large; */
             color: #0000FF;
@@ -59,6 +66,7 @@
             display: flex;
             flex-direction: column;
             flex-wrap: wrap;
+            border-right: 1px solid black;
         }
 
         .club_Title {
@@ -66,16 +74,15 @@
             border-bottom: 1px;
             text-align: center;
             color: #FF00FF;
-
         }
 
         .club_Btn {
-            /* height: auto; */
+            height: 35px;
             text-align: center;
+            /* margin: auto; */
             justify-content: center;
             margin-top: 15px;
             font-size: 16px;
-            text-align: center;
             color: #000000;
             background-image: url(./pic/menu1.png);
             background-repeat: no-repeat;
@@ -89,45 +96,58 @@
         .aside_update {
             width: 215px;
             height: 25px;
-            background-color: coral;
-            
-        }
-        
-        .aside_update>p{
+            /* background-color: coral; */
             text-align: center;
             justify-content: center;
             font-family: '標楷體';
             font-size: 16px;
             color: #000000;
+            border-top: 1px solid black;
+            border-right: 1px solid black;
 
         }
 
         .main {
             width: 770px;
             height: calc(768px - 65px - 20px);
-            background-color: darkorchid;
+            /* background-color: darkorchid; */
         }
 
         .main_marquee {
             width: 770px;
             height: 29px;
-            background-color: blanchedalmond;
+            /* background-color: blanchedalmond; */
             font-family: '標楷體';
-            font-size: x-large;
+            font-size: 24px;
             color: #0000FF;
+            border-bottom: 0px;
+            border-left: 1px solid black;
         }
 
         .main_content {
             width: 770px;
             height: calc(768px - 65px - 20px - 29px);
-            background-color: rgb(216, 204, 97);
+            /* background-color: rgb(216, 204, 97); */
+            border-left: 1px solid black;
+            border-top: 1px solid black;
+        }
+
+        .main_content>iframe {
+            height: 100%;
+            width: 100%;
         }
 
         .footer {
             width: 1000px;
             height: 20px;
-            background-color: darkgreen;
+            /* background-color: darkgreen; */
             margin: auto;
+            text-align: center;
+            font-family: '標楷體';
+            font-size: 16px;
+            color: #000000;
+            border: 1px solid black;
+            border-top: 0px;
         }
     </style>
 </head>
@@ -151,7 +171,7 @@
                     <div class="club_Btn">童軍社</div>
                 </div>
                 <div class="aside_update">
-                    <p>最近更新日期：2024/06/04</p>
+                    最近更新日期：2024/06/04
                 </div>
             </aside>
             <main class="main">
@@ -159,12 +179,14 @@
                     <marquee behavior="" direction="">「歡迎光臨校園社團介紹網，參觀後請支持社團活動並熱烈參與」</marquee>
                 </div>
                 <div class="main_content">
-                    
+                    <iframe src="main.htm" frameborder="0"></iframe>
                 </div>
             </main>
 
         </div>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            「網頁設計及維護：web012」
+        </footer>
     </div>
 
 </body>
