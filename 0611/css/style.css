@@ -6,7 +6,7 @@
 .container {
     width: 1024px;
     height: 768px;
-    background-color:aquamarine;
+    background-color: aquamarine;
     margin: auto;
 }
 
@@ -45,33 +45,45 @@ header>a>img {
 }
 
 .aside {
-    width: 215px;
+    /* width: 215px; */
+    width: calc(100% - 770px);
     height: calc(768px - 65px - 20px);
-    /* background-color: chocolate; */
+    background-color: chocolate;
+    display: flex;
+    flex-direction: column;
+
+
 }
 
 .aside_menu {
-    width: 215px;
+    /* width: 215px; */
+    width: calc(1000px - 770px);
     height: calc(768px - 65px - 20px - 25px);
     /* background-color: steelblue; */
     /* border-right: 1px solid black; */
-    align-items: end;
+    /* align-items: end; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
 }
 
-.box_title {
+.aside_menu >.box_title {   
     font-size: 24px;
     font-family: '標楷體';
     color: #FF00FF;
     font-weight: 500;
     text-align: center;
-}
-
-.box_title>p {
     border-bottom: 1px solid black;
+    margin-top: 10px;
+    padding-top: 8px;
 
 }
 
-.box{
+
+
+.box {
     width: 200px;
     height: 35px;
     margin-top: 10px;
@@ -83,14 +95,15 @@ header>a>img {
     color: #000000;
 }
 
-.box:hover{
+.box:hover {
     background-image: url(../pic/menu2.png);
 }
 
 .aside_footer {
-    width: 215px;
+    /* width: 215px; */
+    width: calc(100% - 770px);
     height: 25px;
-    /* background-color: chartreuse; */
+    background-color: chartreuse;
     border-top: 1px solid black;
     font-size: 16px;
     font-family: '標楷體';
@@ -126,10 +139,12 @@ header>a>img {
     border-left: 1px solid #000;
 
 }
-iframe{
+
+iframe {
     width: 100%;
     height: 100%;
 }
+
 .footer {
     width: 1000px;
     height: 20px;
@@ -137,8 +152,8 @@ iframe{
     margin: auto;
     border: 1px solid #000;
     border-top: 0;
-text-align: center;
-font-size: 16px;
-            font-family: '標楷體';
-            color: #000000;
+    text-align: center;
+    font-size: 16px;
+    font-family: '標楷體';
+    color: #000000;
 }
